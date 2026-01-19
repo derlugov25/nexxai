@@ -410,9 +410,6 @@ export const HeroSection: React.FC = () => {
             <button className="hidden rounded-full bg-gradient-to-r from-blue-600/80 to-purple-600/80 px-4 py-2 text-sm font-medium backdrop-blur-sm transition-colors hover:from-blue-600 hover:to-purple-600 md:block">
               $NEXX on Surge
             </button>
-            <button className="rounded-full bg-gray-800/80 px-4 py-2 text-sm backdrop-blur-sm transition-colors hover:bg-gray-700/80">
-              Application
-            </button>
             <button
               className="rounded-md p-2 md:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -524,9 +521,6 @@ export const HeroSection: React.FC = () => {
                 </a>
                 <button className="rounded-full bg-gradient-to-r from-blue-600/80 to-purple-600/80 px-6 py-3 font-medium backdrop-blur-sm transition-colors hover:from-blue-600 hover:to-purple-600">
                   $NEXX on Surge
-                </button>
-                <button className="rounded-full bg-gray-800/80 px-6 py-3 backdrop-blur-sm">
-                  Application
                 </button>
               </div>
             </motion.div>
