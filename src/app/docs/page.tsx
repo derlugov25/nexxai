@@ -74,6 +74,27 @@ export default function DocsPage() {
 
         <h2>4. Architecture Overview</h2>
         <p>Nexx AI consists of three main layers:</p>
+        
+        <div className="my-8 rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+          <h3 className="mb-4 text-xl font-semibold">System Architecture</h3>
+          <div className="space-y-4">
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4">
+              <h4 className="mb-2 font-semibold text-purple-300">Interface Layer</h4>
+              <p className="text-sm text-gray-300">React Components • User Controls • UI/UX</p>
+              <div className="mt-2 text-xs text-gray-400">↓ Parameters (hue, intensity, speed, size)</div>
+            </div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4">
+              <h4 className="mb-2 font-semibold text-purple-300">AI Neural Network Layer</h4>
+              <p className="text-sm text-gray-300">Deep Learning Model • Pattern Generation • Real-time Adaptation</p>
+              <div className="mt-2 text-xs text-gray-400">↓ Generated Patterns</div>
+            </div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4">
+              <h4 className="mb-2 font-semibold text-purple-300">Rendering Layer</h4>
+              <p className="text-sm text-gray-300">WebGL Shaders • GPU Acceleration • Visual Output</p>
+            </div>
+          </div>
+        </div>
+
         <h3>AI Neural Network Layer</h3>
         <ul>
           <li>Deep learning model trained on lightning patterns</li>
@@ -92,14 +113,55 @@ export default function DocsPage() {
           <li>Real-time parameter adjustment that feeds back to the AI</li>
           <li>Responsive UI that showcases the AI&apos;s adaptive capabilities</li>
         </ul>
-        <p>These layers work together seamlessly:</p>
-        <p>User input → AI processes → Neural network generates pattern → Shader renders → Visual output.</p>
+        
+        <div className="my-8 rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+          <h3 className="mb-4 text-xl font-semibold">Data Flow Diagram</h3>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
+            <div className="rounded-lg bg-white/10 px-4 py-2">User Input</div>
+            <div className="text-gray-400">→</div>
+            <div className="rounded-lg bg-purple-500/20 px-4 py-2">AI Processing</div>
+            <div className="text-gray-400">→</div>
+            <div className="rounded-lg bg-purple-500/20 px-4 py-2">Pattern Generation</div>
+            <div className="text-gray-400">→</div>
+            <div className="rounded-lg bg-purple-500/20 px-4 py-2">Shader Rendering</div>
+            <div className="text-gray-400">→</div>
+            <div className="rounded-lg bg-white/10 px-4 py-2">Visual Output</div>
+          </div>
+        </div>
 
         <h2>5. AI Technology in Detail</h2>
         <p>
           Our Nexx AI uses a custom neural network architecture specifically designed for
           procedural animation generation. The model combines:
         </p>
+
+        <div className="my-8 rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+          <h3 className="mb-4 text-xl font-semibold">Neural Network Architecture</h3>
+          <div className="space-y-3">
+            <div className="rounded-lg border border-white/20 bg-white/5 p-3">
+              <div className="mb-2 font-semibold">Input Layer</div>
+              <div className="flex gap-2 text-xs">
+                <span className="rounded bg-gray-700 px-2 py-1">User Parameters</span>
+                <span className="rounded bg-gray-700 px-2 py-1">Time</span>
+                <span className="rounded bg-gray-700 px-2 py-1">Context</span>
+              </div>
+            </div>
+            <div className="text-center text-gray-400">↓</div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-3">
+              <div className="mb-2 font-semibold text-purple-300">Hidden Layers</div>
+              <div className="text-sm text-gray-300">Pattern Recognition • Feature Extraction • Pattern Synthesis</div>
+            </div>
+            <div className="text-center text-gray-400">↓</div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-3">
+              <div className="mb-2 font-semibold text-purple-300">Output Layer</div>
+              <div className="flex gap-2 text-xs">
+                <span className="rounded bg-purple-700 px-2 py-1">Pattern Data</span>
+                <span className="rounded bg-purple-700 px-2 py-1">Intensity Map</span>
+                <span className="rounded bg-purple-700 px-2 py-1">Color Values</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <h3>5.1. Pattern Learning</h3>
         <p>Core capabilities:</p>
@@ -137,6 +199,36 @@ export default function DocsPage() {
             adapting to context: different times, different patterns, always beautiful
           </li>
         </ul>
+
+        <div className="my-8 rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+          <h3 className="mb-4 text-xl font-semibold">Lightning Generation Process</h3>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/20 text-purple-300">1</div>
+              <div className="flex-1 rounded-lg border border-white/10 bg-white/5 p-3">
+                <strong>Pattern Selection:</strong> AI selects base patterns from training data
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/20 text-purple-300">2</div>
+              <div className="flex-1 rounded-lg border border-white/10 bg-white/5 p-3">
+                <strong>Pattern Combination:</strong> Multiple patterns merged and modified
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/20 text-purple-300">3</div>
+              <div className="flex-1 rounded-lg border border-white/10 bg-white/5 p-3">
+                <strong>Adaptation:</strong> Parameters adjusted based on user input
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/20 text-purple-300">4</div>
+              <div className="flex-1 rounded-lg border border-white/10 bg-white/5 p-3">
+                <strong>Rendering:</strong> Shader generates final visual output
+              </div>
+            </div>
+          </div>
+        </div>
 
         <h2>6. Key Features</h2>
         <h3>6.1. AI-Generated Lightning Canvas</h3>
@@ -187,6 +279,29 @@ export default function DocsPage() {
         </p>
 
         <h2>8. Technical Details</h2>
+        
+        <div className="my-8 rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+          <h3 className="mb-4 text-xl font-semibold">System Performance Metrics</h3>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4 text-center">
+              <div className="text-2xl font-bold text-purple-300">60</div>
+              <div className="text-xs text-gray-400">FPS</div>
+            </div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4 text-center">
+              <div className="text-2xl font-bold text-purple-300">&lt;16ms</div>
+              <div className="text-xs text-gray-400">Frame Time</div>
+            </div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4 text-center">
+              <div className="text-2xl font-bold text-purple-300">GPU</div>
+              <div className="text-xs text-gray-400">Accelerated</div>
+            </div>
+            <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-4 text-center">
+              <div className="text-2xl font-bold text-purple-300">Real-time</div>
+              <div className="text-xs text-gray-400">Generation</div>
+            </div>
+          </div>
+        </div>
+
         <h3>Neural Network Architecture</h3>
         <p>
           Our AI uses a custom deep learning architecture optimized for real-time procedural generation.

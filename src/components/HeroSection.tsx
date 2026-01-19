@@ -616,7 +616,7 @@ export const HeroSection: React.FC = () => {
             variants={itemVariants}
             className="pb-3 text-3xl font-light bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 bg-clip-text text-transparent md:text-5xl"
           >
-            AI Creates Lightning Animations
+            AI-Based Lightning Animation
           </motion.h2>
 
           <motion.p
